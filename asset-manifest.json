@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/redux-notes/static/css/main.34de6062.chunk.css",
+    "main.js": "/redux-notes/static/js/main.63fd12de.chunk.js",
+    "main.js.map": "/redux-notes/static/js/main.63fd12de.chunk.js.map",
+    "runtime~main.js": "/redux-notes/static/js/runtime~main.ea62ceb8.js",
+    "runtime~main.js.map": "/redux-notes/static/js/runtime~main.ea62ceb8.js.map",
+    "static/js/2.f1779b37.chunk.js": "/redux-notes/static/js/2.f1779b37.chunk.js",
+    "static/js/2.f1779b37.chunk.js.map": "/redux-notes/static/js/2.f1779b37.chunk.js.map",
+    "index.html": "/redux-notes/index.html",
+    "precache-manifest.54853fc5320f25f6684d8992b78abff5.js": "/redux-notes/precache-manifest.54853fc5320f25f6684d8992b78abff5.js",
+    "service-worker.js": "/redux-notes/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/redux-notes/static/css/main.34de6062.chunk.css.map"
+  }
+}
