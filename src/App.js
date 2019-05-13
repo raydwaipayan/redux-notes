@@ -22,7 +22,7 @@ const App=props=>{
   const {classes}=props;
   return(
   <div className={classes.root}>
-    <Grid item xs={6}>
+    <Grid item xs={12}>
       <Paper className={classes.paper}>
         <h2>Articles</h2>
         <List />
