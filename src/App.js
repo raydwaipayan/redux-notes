@@ -21,20 +21,20 @@ const styles= theme=>({
 const App=props=>{
   const {classes}=props;
   return(
-  <div className={classes.root}>
-    <Grid item xs={12}>
-      <Paper className={classes.paper}>
-        <h2>Articles</h2>
-        <List />
-      </Paper> 
-    </Grid>
+  <Grid container className={classes.root} spacing={16}>
     <Grid item xs={6}>
       <Paper className={classes.paper}>
         <h2>Add a new article</h2>
         <Form />
       </Paper>
     </Grid>
-  </div>
+    <Grid item xs={6}>
+      <Paper className={classes.paper}>
+        <h2>Articles</h2>
+        <List />
+      </Paper> 
+    </Grid>
+  </Grid>
   );
 }
 App.propTypes = {

@@ -6,7 +6,7 @@ import { TextField } from "@material-ui/core";
 import spacing from "@material-ui/core/styles/spacing";
 import Button from '@material-ui/core/Button';
 
-const mapDispartchToProps = dispatch =>{
+const mapDispatchToProps = dispatch =>{
     return {
         addArticle: article => dispatch(addArticle(article))
     };
@@ -60,6 +60,6 @@ class ConnectedForm extends Component{
     }
 }
 
-const Form= connect(null, mapDispartchToProps)(ConnectedForm);
+const Form= connect(null, mapDispatchToProps)(ConnectedForm);
 
 export default Form;
