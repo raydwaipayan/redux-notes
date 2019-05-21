@@ -3,26 +3,33 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { deleteArticle } from "../actions/index.js";
+import { setInitial } from "../actions/index.js";
+
 import { connect } from "react-redux";
 import { Typography } from "@material-ui/core";
 import Button from '@material-ui/core/Button';
 import spacing from "@material-ui/core/styles/spacing";
+import { getState } from '../graphql/fetch';
 
 const mapStateToProps = state =>{
     return {articles: state.articles };
 };
 const mapDispatchToProps = dispatch =>{
     return{
-        deleteArticle: article => dispatch(deleteArticle(article))
+        deleteArticle: article => dispatch(deleteArticle(article)),
+        setInitial: articles => dispatch(setInitial(articles)),
     }
 };
 
 class ConnectecList extends React.Component{
+
     handleDelete=article=> {
         this.props.deleteArticle(article);
     }
+    componentDidMount(){
+        getState.then(articles=>this.props.setInitial(articles));
+    }
     render(){
-        console.log(this.props.articles);
         return(
         <List>
         {this.props.articles.map(article => (

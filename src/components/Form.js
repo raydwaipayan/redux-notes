@@ -5,6 +5,7 @@ import { addArticle } from "../actions/index";
 import { TextField } from "@material-ui/core";
 import spacing from "@material-ui/core/styles/spacing";
 import Button from '@material-ui/core/Button';
+import submitArticle from "../graphql/modify";
 
 const mapDispatchToProps = dispatch =>{
     return {
@@ -30,6 +31,7 @@ class ConnectedForm extends Component{
         const id=uuidv1();
         this.props.addArticle({title,id});
         this.setState({title: ""});
+        submitArticle(id,title);
     }
     render(){
         const { title } = this.state;
